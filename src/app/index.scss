@@ -11,6 +11,8 @@ $topbar-background: #5AADBB;
 @import '../../bower_components/foundation-sites/scss/foundation';
 @include foundation-grid;
 @include foundation-global-styles;
+@include foundation-forms;
+@include foundation-button;
 
 /**
  *  Do not remove the comments below. It's the markers used by wiredep to inject
