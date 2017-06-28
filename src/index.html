@@ -26,7 +26,7 @@
 
     <div class="container" ng-controller="MainController as main"> 
       <div class="row">
-        <div class="large-6 columns">
+        <form class="large-6 columns" name="calcForm">
           <h1>Vibrent Health Calculator</h1>
           <div class="input-group">
             <input
@@ -35,6 +35,7 @@
               name="calcInput"
               required
               ng-required=true
+              ng-pattern="main.noLetters"
             >
             </input>
             <div class="input-group-button"> 
@@ -52,9 +53,10 @@
             </span>
           </div>
           <label>your solution is {{main.calculation(2,3)}}</label>
-          </div>
+          <code>valid: {{calcForm.calcInput.$valid}}</code><br>
+        </form>
         <div class="small-6 columns"> 
-          <div class="padding-left-2">
+          <div class="padding-left-2  border-left">
             <h1>Task</h1>
             <p>Create an AngularJS directive that includes a text input element. Any text the user enters should be analyzed and a response output onto the page. The input should accept simple equations, such as "2 + 3 / 2" and then output the appropriate answer, paying attention to the order of operations (multiplication or division left to right, then addition or subtraction left to right). +, -, /, *, and optional spaces are the only symbols that need to be accepted, and you cannot use the eval function or anything similar. If the input is not valid, the output text should change to indicate this to the user. Include a file called explanation.md that describes how your code works and explains your reasoning. Inline comments and tests are also encouraged. All code should be written by you, so do not use an Angular Seed project. </p>
           </div> 

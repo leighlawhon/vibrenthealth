@@ -42,6 +42,9 @@ $topbar-background: #5AADBB;
     width: 50px;
   }
 }
+.border-left{
+  border-left: thin solid #ccc;
+}
 
 /**
  *  Do not remove the comments below. It's the markers used by gulp-inject to inject
