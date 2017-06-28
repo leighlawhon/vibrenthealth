@@ -3,11 +3,11 @@
   <div class="input-group">
     <input
       class="input-group-field"
-      ng-model="calc.calcStr"
+      ng-model="vm.calcStr"
       name="calcInput"
       required
       ng-required=true
-      ng-pattern="calc.noLetters"
+      ng-pattern="vm.noLetters"
     >
     </input>
     <div class="input-group-button"> 
@@ -24,6 +24,6 @@
       <span class="operator">/</span>
     </span>
   </div>
-  <label>your solution is {{calc.calculation(2,3)}}</label>
+  <label>your solution is {{vm.calculation(2,3)}}</label>
   <code>valid: {{calcForm.calcInput.$valid}}</code><br>
 </form>

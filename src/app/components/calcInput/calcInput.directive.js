@@ -6,12 +6,12 @@ export function CalcInput() {
     templateUrl: 'app/components/calcInput/calcInput.html',
     link: linkFunc,
     controller: CalcInputCtrl,
-    controllerAs: 'calc'
+    controllerAs: 'vm'
   };
 
   return directive;
 
-  function linkFunc(scope, el, attr, vm) {
+  function linkFunc() {
     
   }
 
