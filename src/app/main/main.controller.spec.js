@@ -8,7 +8,7 @@ describe('controllers', () => {
   it('should render and input', () => { 
     expect(elem.html()).not.toEqual(null);
   })
-  xit('should calculate a total', () => {
-    expect(mainctrl.solution).toEqual('test');
+  it('should calculate a total', () => {
+    expect(mainctrl.calculation(1,2)).toEqual(3);
   })
 });

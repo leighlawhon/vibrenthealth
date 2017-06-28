@@ -26,11 +26,40 @@
 
     <div class="container" ng-controller="MainController as main"> 
       <div class="row">
-        <div class="large-12 columns">
-        {{main.solution}}
-        </div>
+        <div class="large-6 columns">
+          <h1>Vibrent Health Calculator</h1>
+          <div class="input-group">
+            <input
+              class="input-group-field"
+              ng-model="main.calcStr"
+              name="calcInput"
+              required
+              ng-required=true
+            >
+            </input>
+            <div class="input-group-button"> 
+              <input type="text" class="button" value="Submit"> 
+            </div> 
+          </div>
+          
+          <div role="alert">
+            <span class="error" ng-show="calcInput.$error.required">
+              You must input at least two numbers (ex. 1, 0.4, -2) and one operator such as 
+              <span class="operator">+</span> 
+              <span class="operator">-</span> 
+              <span class="operator">*</span>
+              <span class="operator">/</span>
+            </span>
+          </div>
+          <label>your solution is {{main.calculation(2,3)}}</label>
+          </div>
+        <div class="small-6 columns"> 
+          <div class="padding-left-2">
+            <h1>Task</h1>
+            <p>Create an AngularJS directive that includes a text input element. Any text the user enters should be analyzed and a response output onto the page. The input should accept simple equations, such as "2 + 3 / 2" and then output the appropriate answer, paying attention to the order of operations (multiplication or division left to right, then addition or subtraction left to right). +, -, /, *, and optional spaces are the only symbols that need to be accepted, and you cannot use the eval function or anything similar. If the input is not valid, the output text should change to indicate this to the user. Include a file called explanation.md that describes how your code works and explains your reasoning. Inline comments and tests are also encouraged. All code should be written by you, so do not use an Angular Seed project. </p>
+          </div> 
+        </div> 
       </div>
-    
     </div>
     
 

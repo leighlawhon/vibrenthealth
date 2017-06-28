@@ -13,6 +13,8 @@ $topbar-background: #5AADBB;
 @include foundation-global-styles;
 @include foundation-forms;
 @include foundation-button;
+@include foundation-callout;
+@include foundation-prototype-spacing;
 
 /**
  *  Do not remove the comments below. It's the markers used by wiredep to inject

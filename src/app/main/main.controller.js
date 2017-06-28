@@ -1,6 +1,9 @@
 export class MainController {
   constructor () {
     'ngInject';
-    this.solution = 'test';
+    this.calcStr = '';
+    this.calculation = (a,b) => {
+      return a + b;
+    };
   }
 }
