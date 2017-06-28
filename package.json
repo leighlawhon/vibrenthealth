@@ -41,7 +41,7 @@
     "wiredep": "~2.2.2",
     "karma": "~0.13.10",
     "karma-jasmine": "~0.3.6",
-    "karma-phantomjs-launcher": "~0.2.1",
+    "karma-phantomjs-launcher": "^1.0.4",
     "phantomjs": "~1.9.18",
     "karma-phantomjs-shim": "~1.2.0",
     "karma-coverage": "~0.5.2",

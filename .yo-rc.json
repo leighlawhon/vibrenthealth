@@ -5,18 +5,6 @@
       "angularVersion": "~1.5.3",
       "angularModules": [
         {
-          "key": "animate",
-          "module": "ngAnimate"
-        },
-        {
-          "key": "sanitize",
-          "module": "ngSanitize"
-        },
-        {
-          "key": "messages",
-          "module": "ngMessages"
-        },
-        {
           "key": "aria",
           "module": "ngAria"
         }
@@ -29,8 +17,8 @@
         "module": null
       },
       "router": {
-        "key": "ui-router",
-        "module": "ui.router"
+        "key": "noRouter",
+        "module": null
       },
       "ui": {
         "key": "foundation",

@@ -1,15 +1,10 @@
 {
-  "name": "vibrenthealth",
+  "name": "testforkarma",
   "version": "0.0.0",
   "dependencies": {
-    "angular-animate": "~1.5.3",
-    "angular-sanitize": "~1.5.3",
-    "angular-messages": "~1.5.3",
     "angular-aria": "~1.5.3",
-    "angular-ui-router": "~0.2.15",
     "foundation-sites": "^6.1.2",
     "angular-foundation": "~0.6.0",
-    "moment": "~2.10.6",
     "animate.css": "~3.4.0",
     "angular": "~1.5.3"
   },
